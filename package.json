@@ -8,6 +8,7 @@
     "start": "bun run dist/server/server.js"
   },
   "dependencies": {
+    "@stylexjs/stylex": "^0.18.3",
     "@tanstack/react-router": "^1.121.2",
     "@tanstack/react-start": "^1.121.2",
     "react": "^19.0.0",
@@ -16,6 +17,8 @@
     "vite-tsconfig-paths": "^6.1.1"
   },
   "devDependencies": {
+    "@stylexjs/babel-plugin": "^0.18.3",
+    "@types/node": "^25.6.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.3.4",

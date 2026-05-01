@@ -1,0 +1,48 @@
+{
+  "brand": {
+    "name": "myMenu"
+  },
+  "colors": {
+    "primary": "",
+    "secondary": "",
+    "background": "",
+    "surface": "",
+    "text": "",
+    "textMuted": "",
+    "border": "",
+    "error": "",
+    "success": "",
+    "warning": ""
+  },
+  "typography": {
+    "fontFamily": {
+      "sans": "Geist",
+      "mono": ""
+    },
+    "fontSize": {
+      "xs": "",
+      "sm": "",
+      "base": "",
+      "lg": "",
+      "xl": "",
+      "2xl": "",
+      "3xl": ""
+    },
+    "fontWeight": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    }
+  },
+  "spacing": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "6": "",
+    "8": "",
+    "12": "",
+    "16": ""
+  }
+}

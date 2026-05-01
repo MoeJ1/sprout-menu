@@ -34,6 +34,9 @@ gke_deployment: sprout-menu
 k8s_namespace: default
 ```
 
+## Service Accounts
+
+- `cicd-sprout-menu@sandbox-community.iam.gserviceaccount.com` — attached to the `deploy-main` Cloud Build trigger; handles both build and deploy. Roles: `artifactregistry.writer`, `container.developer`, `logging.logWriter`, `cloudbuild.builds.builder`
 
 ## Conventions
 
