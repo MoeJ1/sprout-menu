@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sprout-menu
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sprout-menu
+  template:
+    metadata:
+      labels:
+        app: sprout-menu
+    spec:
+      containers:
+        - name: sprout-menu
+          image: me-central1-docker.pkg.dev/sandbox-community/sandbox-community/sprout-menu:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: NODE_ENV
+              value: production
+            - name: PORT
+              value: "3000"
