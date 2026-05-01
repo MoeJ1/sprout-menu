@@ -1,0 +1,23 @@
+substitutions:
+  _IMAGE_NAME: sprout-menu
+  _REGION: me-central1
+  _REGISTRY: me-central1-docker.pkg.dev/sandbox-community/sandbox-community
+
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -t
+      - ${_REGISTRY}/${_IMAGE_NAME}:${COMMIT_SHA}
+      - -t
+      - ${_REGISTRY}/${_IMAGE_NAME}:latest
+      - .
+
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - --all-tags
+      - ${_REGISTRY}/${_IMAGE_NAME}
+
+options:
+  logging: CLOUD_LOGGING_ONLY
