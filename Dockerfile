@@ -13,6 +13,6 @@ RUN bun run build
 FROM base AS runner
 WORKDIR /app
 ENV NODE_ENV=production
-COPY --from=build /app/.output ./.output
+COPY --from=build /app/dist ./dist
 EXPOSE 3000
-CMD ["bun", "run", ".output/server/index.mjs"]
+CMD ["bun", "run", "dist/server/server.js"]
